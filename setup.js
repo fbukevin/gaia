@@ -201,7 +201,6 @@ window.TestUrlResolver = function() {
 				}
 			},
 			resolve: function tur_resolve(url) {
-				console.log(url);
 				var parts = this.parse(url);
 				return parts.domain + parts.url;
 			}
@@ -209,5 +208,7 @@ window.TestUrlResolver = function() {
 }();
 window.TestUrlResolver = TestUrlResolver;
 window.requireApp = function(url, cb, options){
-	require(TestUrlResolver.resolve(url), cb, options);
+	//require(TestUrlResolver.resolve(url), cb, options);
+	require(url, cb, options);
 }
+
