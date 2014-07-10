@@ -16,9 +16,27 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'setup.js',
-  	  'shared/test/unit/mocks/mocks_helper.js',
-  	  'shared/js/template.js',
-      'apps/video/test/unit/*.js'
+  	  'assert.js',
+  	  'shared/js/lazy_loader.js',
+      'shared/js/l10n.js',
+      'shared/js/l10n_date.js',
+	  'shared/js/media/media_utils.js',
+	  'shared/test/unit/load_body_html_helper.js',
+      'shared/test/unit/mocks/mock_screen_layout.js',
+	  'shared/test/unit/mocks/mock_video_stats.js',
+	  'shared/test/unit/mocks/mocks_helper.js',
+  	  'apps/video/js/video_utils.js',	  
+	  'apps/video/test/unit/mock_l10n.js',
+	  'apps/video/test/unit/mock_metadata.js',
+	  'apps/video/test/unit/mock_mediadb.js',
+	  'apps/video/test/unit/mock_thumbnail_group.js',
+	  'apps/video/test/unit/mock_thumbnail_item.js',
+	  'apps/video/test/unit/mock_video_player.js',
+	  'apps/video/js/thumbnail_list.js',
+	  //'apps/video/index.html',
+	  'apps/video/js/video.js',
+  	  'apps/video/test/unit/video_utils_test.js',
+	  'apps/video/test/unit/video_test.js'
     ],
 
 	client:{
