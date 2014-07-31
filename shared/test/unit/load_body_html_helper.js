@@ -32,10 +32,15 @@ function getFile(filename, callback) {
 }
 
 function loadBodyHTML(filename) {
-  if (!(filename in bodyHTML)) {
+//VECK
+filename = '/Users/veck/gaia/apps/video'+filename;
+
+   if (!(filename in bodyHTML)) {
     getFile(filename);
   }
+
   document.body.innerHTML = bodyHTML[filename];
+
 }
 
 global.loadBodyHTML = loadBodyHTML;

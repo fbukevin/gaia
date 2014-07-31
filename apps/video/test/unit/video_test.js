@@ -52,7 +52,7 @@ suite('Video App Unit Tests', function() {
     mocksForVideo.suiteSetup();
 
     // Create DOM structure
-    loadBodyHTML('base/apps/video/index.html');
+    loadBodyHTML('/index.html');
 
     nativeMozL10n = navigator.mozL10n;
     navigator.mozL10n = MockL10n;
