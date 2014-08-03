@@ -41,7 +41,8 @@ suite('Bluetooth app > deviceList ', function() {
     realMozBluetooth = navigator.mozBluetooth;
     switchReadOnlyProperty(navigator, 'mozBluetooth', MockMozBluetooth);
 
-    loadBodyHTML('./_transfer.html');
+    loadBodyHTML('/Users/veck/gaia/apps/bluetooth/test/unit/_transfer.html');
+    //loadBodyHTML('./_transfer.html');
     requireApp('bluetooth/js/deviceList.js', done);
   });
 

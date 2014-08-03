@@ -50,7 +50,8 @@ suite('Bluetooth app > transfer ', function() {
 
     MockNavigatormozSetMessageHandler.mSetup();
 
-    loadBodyHTML('./_transfer.html');
+    loadBodyHTML('/Users/veck/gaia/apps/bluetooth/test/unit/_transfer.html');
+    //loadBodyHTML('./_transfer.html');
     requireApp('bluetooth/js/transfer.js', done);
   });
 

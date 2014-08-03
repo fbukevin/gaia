@@ -52,7 +52,8 @@ suite('Video App Unit Tests', function() {
     mocksForVideo.suiteSetup();
 
     // Create DOM structure
-    loadBodyHTML('/index.html');
+    loadBodyHTML('/Users/veck/gaia/apps/video/index.html');
+    //loadBodyHTML('/index.html');
 
     nativeMozL10n = navigator.mozL10n;
     navigator.mozL10n = MockL10n;

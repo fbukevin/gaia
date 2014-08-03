@@ -26,7 +26,8 @@ suite('Bluetooth app > Pairview ', function() {
     realL10n = window.navigator.mozL10n;
     window.navigator.mozL10n = MockL10n;
 
-    loadBodyHTML('./_onpair.html');
+    loadBodyHTML('/Users/veck/gaia/apps/bluetooth/test/unit/_onpair.html');
+    //loadBodyHTML('./_onpair.html');
 
     requireApp('bluetooth/js/pair_view.js', done);
   });

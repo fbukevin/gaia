@@ -13,7 +13,8 @@ suite('Bluetooth app > PairExpiredDialog ', function() {
     realL10n = window.navigator.mozL10n;
     window.navigator.mozL10n = MockL10n;
 
-    loadBodyHTML('./_message.html');
+    loadBodyHTML('/Users/veck/gaia/apps/bluetooth/test/unit/_message.html');
+    //loadBodyHTML('./_message.html');
 
     requireApp('bluetooth/js/pair_expired_dialog.js', done);
   });
