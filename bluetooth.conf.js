@@ -16,11 +16,13 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'apps/bluetooth/test/unit/setup.js',
+
       'dev_apps/test-agent/agent.js',
       'dev_apps/test-agent/common/test/mocha_generators.js',
       'dev_apps/test-agent/common/test/helper.js',
       'dev_apps/test-agent/common/test/sinon_helper.js',
-      'apps/bluetooth/test/unit/pair_view_test.js',      
+      
+      'apps/bluetooth/test/unit/*_test.js',      
       { pattern: '+(apps|dev_apps|shared)/**/*.*', watched: false, included: false, served: true }
     ],
 
