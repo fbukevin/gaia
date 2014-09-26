@@ -7,7 +7,7 @@
   var htmlFragments;
   var requestedFragments = {};
 
-  var Common = window.parent.CommonResourceLoader,
+  var Common = window.CommonResourceLoader,
       // mocha test methods we want to provide
       // yield support to.
       testMethods = [
@@ -36,10 +36,6 @@
     }
     Assertion.prototype.assert = chaiAssert;
   }
-
-  window.requireApp = function(url, cb, options) {
-    require(TestUrlResolver.resolve(url), cb, options);
-  };
 
   /**
    * Appends a templated node to the body for a suite
@@ -100,7 +96,7 @@
    *                      when resource has been loaded.
    */
   window.requireCommon = function(url, cb) {
-    require(Common.url('/common/' + url), cb);
+    require('/dev_apps/test-agent/common/' + url, cb);
   };
 
   // template

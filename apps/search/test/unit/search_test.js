@@ -19,7 +19,8 @@ suite('search/search', function() {
   var clock;
 
   suiteSetup(function(done) {
-    loadBodyHTML('/index.html');
+    //loadBodyHTML('/index.html');
+    loadBodyHTML('/User/veck/gaia/apps/search/index.html');
 
     realSetMessageHandler = navigator.mozSetMessageHandler;
     navigator.mozSetMessageHandler = MockNavigatormozSetMessageHandler;

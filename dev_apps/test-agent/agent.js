@@ -19,25 +19,3 @@
     return this;
     };
 }(this));
-
-CommonResourceLoader
-  .stylesheet('/common/vendor/test-agent/test-agent.css')
-  .stylesheet('/common/vendor/mocha/mocha.css');
-
-CommonResourceLoader
-  .script('/common/vendor/mocha/mocha.js')
-  .script('/common/vendor/sinon/sinon.js')
-  .script('/common/vendor/blanket/blanket.js')
-  .script('/common/vendor/test-agent/test-agent.js')
-  .script('/common/test/test_url_resolver.js')
-  .script('/common/test/agent.js');
-
-window.onerror = function() {
-  var args = Array.prototype.slice.call(arguments);
-  var json = JSON.stringify(args);
-  var debug = document.createElement('p');
-  debug.style.color = 'red';
-
-  document.body.appendChild(debug);
-}
-
