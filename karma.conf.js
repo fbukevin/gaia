@@ -18,7 +18,8 @@ module.exports = function(config) {
       'apps/video/test/unit/*_test.js',
       'apps/fl/test/unit/*_test.js',
       'apps/fm/test/unit/*_test.js',
-      { pattern: '+(apps|shared)/**/*.*', watched: false, included: false, served: true }
+      'apps/bluetooth/test/unit/*_test.js',
+      { pattern: '+(apps|dev_apps|shared)/**/*.*', watched: false, included: false, served: true }
     ],
 
 	client:{
